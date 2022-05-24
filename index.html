@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diario de Superhores">
+    <link rel="stylesheet" href="style.css">
+    <title>Diario de SuperHeroes</title>
+</head>
+<body>
+
+    <div class="suscribers">Este es un diario independiente, por favor suscribanse, que el ultimo ataque en Metropolis nos dejo sin plata</div>
+
+    <header>
+        <img src="./assets/logo.png" alt="Logo">
+        <h1>Diario de SuperHeroes</h1>
+
+        <nav>
+            <ul>
+                <li class="navList"><a href="info.html">últimas noticias</a></li>
+                <li class="navList"><a href="info.html">Superman</a></li>
+                <li class="navList"><a href="info.html">Internacionales</a></li>
+                <li class="navList"><a href="info.html">Ecología</a></li>
+                <li class="navList"><a href="info.html">Pronóstico del tiempo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="principal">
+        <main>
+            <article>
+                <h2>Superman: de nuevo salvando la Ciudad</h2>
+                <p class="reporterName">Por Lois Lane</p>
+                <figure>
+                    <img src="./assets/super.jpg" alt="Superman" class="photo">
+                    <figcaption>Superman posa frente a nuestra oficina.</figcaption>
+                </figure>
+                <div class="newsContent">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ullam error similique nam sunt dolorum quia earum possimus laudantium architecto?</p>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ullam error similique nam sunt dolorum quia earum possimus laudantium architecto?</p>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ullam error similique nam sunt dolorum quia earum possimus laudantium architecto?</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Especial: todos los enemigos de Superman</h2>
+                <p class="reporterName">Por Jimmy Olsen</p>
+                <figure>
+                    <img class="photo" src="./assets/enemigos.jpg" alt="Enemigos de Superman">
+                    <figcaption>Superman tiene pocos amigos</figcaption>
+                </figure>
+                <div class="newsContent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque tempore itaque ad necessitatibus? Id suscipit ratione velit aliquid consequuntur.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores molestiae quaerat rem ratione animi unde saepe doloribus cum recusandae?</p>
+                </div>
+            </article>
+        </main>
+
+        <aside>
+            <article>
+                <h2>Sección Publicitaria</h2>
+                <h3>Día del niño! Especial de regalos para chicos.</h3>
+                <div class="ads">
+                    <figure>
+                        <img src="./assets/Bat-signal.png" alt="bati señal">
+                        <figcaption>Para el murcielaguito de la casa!</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/lasso.jpeg" alt="amazon">
+                        <figcaption>Sacá la amazona que hay en vos!</figcaption>
+                    </figure>
+                </div>
+                <div class="ads"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo optio minus a quas assumenda maiores totam fuga error nesciunt ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo optio minus a quas assumenda maiores totam fuga error nesciunt ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo optio minus a quas assumenda maiores totam fuga error nesciunt ipsum.</p>
+                    <img src="assets/heroes.jpg" alt="">
+                </div>
+            </article>
+        </aside>
+    </div>
+
+    <div class="suscribe">
+        <h2>Suscribite para recibir todas las noticias de Metropolis!</h2>
+        <form action="/" method="GET">
+            <h3>Datos de contacto:</h3>
+            <label class="userInfo">Tu nombre:
+                <input type="text" name="suscriberName" placeholder="Clark" required>
+            </label>
+            <label class="userInfo">Tu apellido:
+                <input type="text" name="suscriberLastname" placeholder="Kent" required>
+            </label>
+            <label class="userInfo">Tu email:
+                <input type="email" name="suscriberEmail" placeholder="notsuperman@dailyplanet.com" required>
+            </label>
+
+            <h3>Ciudad de Origen:</h3>
+            <select name="city">
+                <option class="cityText" value="metropolis" selected>metrópolis</option>
+                <option class="cityText" value="smallville">smallville</option>
+                <option class="cityText" value="gotham">gotham</option>
+                <option class="cityText" value="central">central city</option>
+                <option class="cityText" value="fawcett">fawcett city</option>
+                <option class="cityText" value="other">otras</option>
+            </select>
+
+            <h3>Tipo de suscripción deseada:</h3>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor1" value="1">Basic
+            </label>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor2" value="2">Advanced
+            </label>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor3" value="1" checked>Premiun
+            </label>
+
+            <p>Qué suscripción es para mi?
+                <a href="./info.html">
+                    <strong>Hacé Click para más información!</strong>
+                </a>
+            </p>
+
+            <button>Suscribirse</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Daily planet no es propiedad registrada de superman &copy; Metrópolis 1932.</p>
+        <p>Hecho por <a href="https://www.instagram.com/__stef4no/" target="_blank">Stefano</a></p>
+    </footer>
+
+</body>
+</html>
